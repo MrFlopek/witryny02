@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="formularz_akcja.html">
+  <fieldset>
+    <legend>Zadanie</legend>
+    <br />
+    <label for="Imię">Imię</label>
+    <input type="text" id="Imię" name="Imię" required>
+    <br><br />
+    <label for="DImię">Drugię Imię:</label>
+    <input type="text" id="DImię" name="DImię">
+    <br><br />
+    <label for="Nazwisko">Nazwisko:</label>
+    <input type="text" id="Nazwisko" name="Nazwisko" required>
+    <br><br />
+    <label for="urodzenia">Data Urodzenia:</label>
+    <input type="date" id="urodzenia" name="urodzenia" min="1900-01-01" max="2022-11-18" required>
+    <br><br />
+    <label for="miejscowość">Miejscowość Urodzenia:</label>
+    <input type="text" id="miejscowość" name="miejscowość" required>
+    <br><br />
+    <label for="Województwo">Województwo Urodzenia:</label>
+    <select id="Województwo" name="Województwo" required>
+      <option value="dolnośląskie">Dolnośląskie</option>
+      <option value="kujawsko-pomorskie">Kujawsko-Pomorskie</option>
+      <option value="lubelskie">Lubelskie</option>
+      <option value="lubuskie">Lubuskie</option>
+      <option value="łódzkie">Łódzkie</option>
+      <option value="małopolskie">Małopolskie</option>
+      <option value="mazowieckie">Mazowieckie</option>
+      <option value="opolskie">Opolskie</option>
+      <option value="podkarpackie">Podkarpackie</option>
+      <option value="podlaskie">Podlaskie</option>
+      <option value="pomorskie">Pomorskie</option>
+      <option value="śląskie">Śląskie</option>
+      <option value="świętokrzyskie">Świętokrzyskie</option>
+      <option value="warmińsko-mazurskie">Warmińsko-Mazurskie</option>
+      <option value="wielkopolskie">Wielkopolskie</option>
+      <option value="zachodniopomorskie">Zachodniopomorskie</option>
+    </select>
+    <br><br />
+    <input type="submit" value="Wyślij">
+  </fieldset>
+</form>
+</body>
+</html>
