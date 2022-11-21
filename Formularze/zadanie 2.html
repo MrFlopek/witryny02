@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="formularz_akcja.html">
+  <fieldset>
+    <legend>Zadanie 2</legend>
+    <br />
+    <label for="Marka">Marka<span style="color: red">*</span>:</label>
+    <input type="text" id="Marka" name="Marka" required>
+    <br><br />
+    <label for="Model">Model:</label>
+    <input type="text" id="Model" name="Model">
+    <br><br />
+    <label for="Nadwozie">Rodzaj Nadwozia<span style="color: red">*</span>:</label>
+    <select id="Nadwozie" name="Nadwozie" multiple required>
+      <option value="">Wybierz typ nadwozia</option>
+      <option value="Sedan">Sedan</option>
+      <option value="Suv">Suv</option>
+      <option value="Coupe">Coupe</option>
+      <option value="Combi">Combi</option>
+      <option value="Hatchback">Hatchback</option>
+    </select>
+    <br><br />
+    <label for="Produkcja">Miesiąc i rok produkcji:</label>
+    <input type="month" id="Produkcja" name="Produkcja" min="1885-01" max="2022-11">
+    <br><br />
+    <label for="Paliwo">Rodzaj Paliwa:</label>
+    <select id="Paliwo" name="Paliwo">
+      <option value="">Wybierz Rodzaj Paliwa</option>
+      <option value="benzyna">Benzyna</option>
+      <option value="gaz">Gaz</option>
+      <option value="diesel">Diesel</option>
+      <option value="Benzyna+Gaz">Benyzna+Gaz</option>
+      <option value="Diesel+Gaz">Diesel+Gaz</option>
+    </select>
+    <br><br />
+    <label for="Przebieg">Przebieg od:</label>
+    <input type="range" id="Przebieg" name="Przebieg" min="25000" max="250000" step="25000" onchange="rangevalue" oninput="this.nextElementSibling.value = this.value">
+    <output id="rangevalue">0</output>
+    <label for="Przebieg1">Przebieg do:</label>
+    <input type="range" id="Przebieg1" name="Przebieg1" min="25000" max="250000" step="25000" onchange="rangevalue1" oninput="this.nextElementSibling.value = this.value">
+    <output id="rangevalue1">0</output>
+    <br><br />
+    <label for="Cena">Cena od<span style="color: red">*</span>:</label>
+    <input type="range" id="Cena" name="Cena" min="2000" max="500000" step="1000" onchange="rangevalue2" required oninput="this.nextElementSibling.value = this.value">
+    <output id="rangevalue2">0</output>
+    <label for="Cena1">Cena do<span style="color: red">*</span>:</label>
+    <input type="range" id="Cena1" name="Cena1" min="2000" max="500000" step="1000" required onchange="rangevalue3" oninput="this.nextElementSibling.value = this.value">
+    <output id="rangevalue3">0</output>
+    <br><br />
+    <input type="submit" value="Wyślij">
+  </fieldset>
+</form>
+</body>
+</html>
