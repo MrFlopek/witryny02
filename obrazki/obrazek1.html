@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Obrazek z tekstem z lewej</h1>
+  <div style="text-align: justify">
+    <img alt="" src="https://loremflickr.com/320/240"  style="float: left; margin-right: 15px; width: 200px; height: 200px"/>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </div>
+<br style="clear: both">
+<h1>Obrazek z opisem</h1>
+<figure>
+  <img alt="Obrazek" src="https://loremflickr.com/320/240" style="">
+  <figcaption>Obraz 1. Fotografie kotów</figcaption>
+</figure>
+<h1>Mapa odsyłaczy</h1>
+<div>
+  <img alt="" src="/assets/kwadracik.webp" usemap="#mymap">
+  <map id="mymap">
+    <area shape="rect" coords="" alt="" href="https://www.wp.pl/">
+    <area shape="circle" coords="100,100,1000" alt="" href="https://www.wp.pl/">
+  </map>
+</div>
+<h1>Obrazek jako ło innego elementu</h1>
+<div style="background-image: url("assets/kwadratikolo.jpg"); background-repeat: no-repeat;background-attachment: fixed;background-size:cover;">
+  Contrary to popular belief, Lorem Ipsum is not simply random text.
+  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+  Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+  Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+  The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet.", comes from a line in section 1.10.32.
+  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+  Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+</div>
+<h1>Użycie elementu picture</h1>
+<picture>
+  <source media="(min-width: 800px)" srcset="/assets/dog_500_500(1).jpg">
+  <source media="(min-width: 600px)" srcset="/assets/dog_500_500.jpg">
+  <img alt="" src="/assets/dog_500_500.jpg">
+</picture>
+</body>
+</html>
