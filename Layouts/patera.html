@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+    }
+    .column{
+      float: left;
+      width: 20%;
+      padding: 10px;
+      height: 500px;
+    }
+    .column2{
+      float: left;
+      width: 60%;
+      padding: 10px;
+      height: 500px;
+    }
+    .column3{
+      float: left;
+      width: 20%;
+      padding: 10px;
+      height: 500px;
+    }
+    .wysokosc{
+      width: 100%;
+      text-align: center;
+    }
+    .row:after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+      .column2{
+        width: 100%;
+      }
+      .column3{
+        width: 100%;
+      }
+    }
+    .trzecia{
+      border: 1px red solid;
+    }
+    .lista{
+      border: 1px darkgray dotted;
+    }
+    .Zaloguj{
+      width: 100%;
+    }
+    .formularz1{
+      width: 100%;
+      background-color: greenyellow;
+    }
+    td{
+      border: 2px #6e4030 solid;
+    }
+  </style>
+</head>
+<body>
+<header class="wysokosc" style="background-color: lightpink ">
+  <picture>
+    <source media="(min-width:800px)" srcset="/assets/doggo2.jpg">
+    <source media="(min-width:600px)" srcset="/assets/doggo3.jpg">
+    <source media="(min-width:450px)" srcset="/assets/doggo4.jpg">
+    <img src="/assets/doggo1.jpg" alt="">
+  </picture>
+</header>
+<div class="row">
+  <div class="column" style="background-color:pink;">
+    <form class="formularz1">
+      <fieldset style="color: blue; border-color: blue">
+        <legend>Panel logowania</legend>
+        <br />
+        <label for="username">Login:</label>
+        <input type="text" placeholder="Wpisz Login" id="username" name="username" required>
+        <br /><br />
+        <label for="pass">Hasło:</label>
+        <input type="password" placeholder="Wpisz hasło" id="pass" name="pass" required>
+        <br /><br />
+        <label for="username">Zapamiętaj hasło:</label>
+        <input type="text" placeholder="Zapamiętaj" id="username" name="username" class="Zaloguj" required>
+        <input style="width: 100%" type="submit" value="Zaloguj">
+      </fieldset>
+    </form>
+  </div>
+  <div class="column2" style="background-color: white;">
+    <h3>Tabela roczna</h3>
+    <table text-align="center" style="border:0; border-collapse: collapse" background="/assets/doggo.jpg">
+      <tbody>
+      <tr>
+        <td>Styczeń</td>
+        <td>Luty</td>
+        <td>Marzec</td>
+        <td>Kwiecień</td>
+        <td>Maj</td>
+        <td>Czerwiec</td>
+        <td>Liepiec</td>
+        <td>Sierpień</td>
+        <td>Wrzesień</td>
+        <td>Październik</td>
+        <td>Listopad</td>
+        <td>Grudzień</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td colspan="12" style="text-align: center"><img src="/assets/1.jfif" alt=""></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="column3" style="background-color: blue;">
+    <form action="https://www.google.pl/search" method="get" class="trzecia">
+      <input type="text"><input style="background-color: cyan" type="submit" value="Szukaj">
+    </form>
+    <td>
+      <ul style="list-style-type: lower-greek" class="lista">
+        <li>
+        <li>
+        <li>
+        <li>
+        <li>
+      </ul>
+    </td>
+  </div>
+</div>
+<footer class="wysokosc" style="background-color: mediumpurple">
+  <h2>Stopka</h2>
+</footer>
+</body>
+</html>
